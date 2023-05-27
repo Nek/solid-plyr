@@ -81,6 +81,10 @@
       "require": "./dist/cjs/production/index.jsx",
       "import": "./dist/esm/production/index.jsx",
       "types": "./dist/types/index.d.ts"
+    },
+    "./dist/esm/development/index.css": {
+      "import": "./dist/esm/development/index.css",
+      "require": "./dist/esm/development/index.css"
     }
   },
   "typesVersions": {
