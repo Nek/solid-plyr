@@ -28,7 +28,7 @@ export default function UncontrolledPlyr(
             </div>
           )}
         >
-          {(fallback) => fallback}
+          {props.fallback}
         </Show>
       </Show>
       <div>

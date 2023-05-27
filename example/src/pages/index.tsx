@@ -14,9 +14,6 @@ const VimeoDemo = lazy(() => (
 const Mp4Demo = lazy(() => (
   import('../components/Mp4Demo')
 ));
-const DashDemo = lazy(() => (
-  import('../components/DashDemo')
-));
 
 export default function HomePage(): JSX.Element {
   const [state, setState] = createSignal('mp4');
@@ -36,11 +33,6 @@ export default function HomePage(): JSX.Element {
           {
             state() === 'hls' && (
               <HlsDemo />
-            )
-          }
-          {
-            state() === 'dash' && (
-              <DashDemo />
             )
           }
           {
@@ -67,13 +59,6 @@ export default function HomePage(): JSX.Element {
               onClick={() => setState('hls')}
             >
               HLS Player
-            </button>
-            <button
-              type="button"
-              class="inline-flex justify-center items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-              onClick={() => setState('dash')}
-            >
-              Dash Player
             </button>
             <button
               type="button"

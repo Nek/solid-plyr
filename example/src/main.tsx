@@ -2,7 +2,7 @@
 import { render } from 'solid-js/web';
 
 // ANCHOR Solid App Router
-import { Router } from 'solid-app-router';
+import { Router } from '@solidjs/router';
 
 // ANCHOR Twind
 import { setup } from 'twind';
